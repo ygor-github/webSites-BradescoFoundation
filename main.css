@@ -17,11 +17,15 @@ body{
 .light-theme{
 --bg: var(--green);
 --fontColor: var(--black);
+--btnBg: var(--black);
+--btnFontColor: var(--white);
 }
 
 .dark-theme {
 --bg: var(--black);
 --fontColor: var(--green);
+--btnBg: var(--white);
+--btnFontColor: var(--black);
 }
 
 
@@ -35,4 +39,18 @@ li{
 
 .list{
     list-style: square;
+}
+
+.btn{
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height:50px;
+    border-radius: 50%;
+    width: 50px;
+}
+.btn:focus{
+    outline-style: none;
 }
